@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    color: #0b1b0d;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.bloco {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 15px 0;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+}
+
+.header-bloco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    font-family: 'Nunito', sans-serif;
+    color: #1E3A5F ;
+}
+
+.logo p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.menu a:hover {
+    opacity: 0.8;
+    color: #001a0b;
+}
+
+/* Beneficios */
+.beneficios {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.beneficios h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    color: #2e7d32;
+    position: relative;
+}
+
+.beneficios h2:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #4caf50;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.beneficios-bloco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.beneficios-item {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 5px solid #4caf50;
+}
+
+.beneficios-item .icone{
+    font-size: 2.5rem;
+    color: #003002;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.beneficios-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios-item h3 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.beneficios-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Produtos */
+.produtos {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.produtos h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: #2e7d32;
+}
+
+.produtos h2:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #4caf50;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.produto-bloco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.produto-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+    flex: 1 1 200px;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.produto-item:hover {
+    transform: translateY(-5px);
+}
+
+.produto-item h3 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.produto-item p a{
+    color: #1b5e20;
+}
+
+/* Sobre */
+.sobre {
+    padding: 80px 0;
+}
+
+.sobre h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: #2e7d32;
+}
+
+.sobre h2:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #4caf50;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.sobre-content {
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-text {
+    max-width: 800px;
+    text-align: center;
+}
+
+.sobre-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Depoimentos */
+.depoimentos {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.depoimentos h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    color: #2e7d32;
+    position: relative;
+}
+
+.depoimentos h2:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #4caf50;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.depoimentos-bloco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.depoimento-item {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.depoimento-item p {
+    color: #555;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.depoimento-texto p:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -10px;
+    font-size: 3rem;
+    color: #4caf50;
+    font-family: 'Nunito', sans-serif;
+}
+
+.depoimento-cliente{
+    text-align: right;
+    color: #001a0b;
+}
+
+/* Contato */
+.contato {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: #2e7d32;
+}
+
+.contato h2:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #4caf50;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.contato-info, .contato-formulario {
+    flex: 1 1 400px;
+}
+
+.contato-info h3, .contato-formulario h3 {
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+.formulario-grupo {
+    margin-bottom: 20px;
+}
+
+.formulario-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.formulario-grupo input, .formulario-grupo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.formulario-grupo textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contato-formulario button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contato-formulario button:hover {
+    background-color: #1b5e20;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    
+    .header-bloco {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .menu {
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .beneficios, .produtos, .sobre, .contato, .depoimento {
+        padding: 40px 0;
+        font-size: 0.8rem;
+    }
+
+    /* Beneficios */
+    .beneficios h2 {
+        font-size: 1.5rem;
+    }
+
+    .beneficios h3{
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+
+    .beneficios-item .icone {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    /* Depoimentos */
+    .depoimentos h2 {
+        font-size: 1.5rem;
+    }
+    
+    .depoimento-item {
+        flex: 1 1 100%;
+    }
+
+    depoimento-item p{
+        font-size: 0.6rem;
+    }
+
+    /* Sobre */
+    .sobre p{
+        font-size: 0.8rem;
+    }
+
+    .produto-bloco {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    /* Produto */
+    .produto-item{
+        width: 100%;
+        min-width: 100%;
+    }
+    .produto-item  p{
+        font-size: 0.95rem;
+    }
+    
+    /* Contato */
+    .contato {
+        flex-direction: column;
+    }
+    
+    .contato-info, .contato-formulario {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .produtos h2, .sobre h2, .contato h2 {
+        font-size: 1.4rem;
+    }
+}
